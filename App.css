@@ -1,0 +1,52 @@
+import Greeting from './greeting';
+import './App.css';
+function App(){
+return
+(
+<div classname="App">
+<header classname = "App-header">
+<h2>Hello World!</h2>
+<p>Welcome to my first react App</p>
+<Greeting/>
+</header>
+</div>
+);
+}export default App;
+import react from 'react';
+function greeting(){
+return
+(
+<div classname="greeting-container">
+<h2 classname="greeting-title">Welcome to my react App</h2>  
+</div>
+);
+}export default greeting;
+
+.App-header{
+background-color:white;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+font-size:calc(10px+2vmin);
+color:cyan;
+}
+.greeting-container{
+padding:20px;
+margin-top:30px;
+background-color:#61dafb;
+border-radius:10px;
+box-shadow:0px 4px 6px rgba(0,0,0,0.1);
+text-align:center;
+}
+.greeting-title{
+color:#282c34;
+font-size:24px;
+font-weight:bold;
+}
+p{
+color:#333;
+font-size:18px
+}
+
